@@ -14,10 +14,14 @@ int main() {
 
         unordered_map<int,int> freq;
 
-        for ( auto i : a )
-            freq[i]++;
+        for ( auto i : a ) freq[i]++;
 
-    
+        int ans = 0;
+        for ( auto &[ val, cnt ] : freq ){
+            ans += val * ( cnt / val );
+        }
+
+        cout << ans << endl;  
 
     }
 }
