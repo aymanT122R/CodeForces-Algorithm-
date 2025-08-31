@@ -15,10 +15,16 @@ int main() {
         unordered_map<int,int> freq;
 
         for ( auto i : a )
-            cout << freq[i]++ << endl;
+            freq[i]++;
         for ( auto i : freq) 
             cout << i.first << " : " << i.second << endl;
     
 
     }
 }
+/*
+we can test with this input:
+1
+5
+1 2 2 3 3
+*/
